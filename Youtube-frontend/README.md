@@ -38,7 +38,7 @@ JWT_SECRET=your_jwt_secret
 3. Frontend .env file
 VITE_API_ROUTES = http://localhost:5000/api/v1
 4. Run both backend and frontend
-npm run dev
+npm run dev.
 Authors
 @Ravikant Rathod
 🚀 About Me
