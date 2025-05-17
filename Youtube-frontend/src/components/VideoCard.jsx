@@ -15,11 +15,11 @@ const VideoCard = ({ video }) => {
         localStorage.setItem("vidId", video._id);
         navigate(`/video/${video.videoId}`);
       }}
-      className="cursor-pointer group max-w-screenh hover:-translate-y-1.5 duration-200 transition-all flex w-80 max-lg:w-60 max-md:w-80 max-sm:w-96 flex-col"
+      className="cursor-pointer group max-w-screen hover:-translate-y-1 duration-200 transition-all flex w-73 max-lg:w-60 max-md:w-80 max-sm:w-96 flex-col"
     >
       {/* Thumbnail */}
       <div>
-        <img src={video.thumbnailUrl} className="h-56 p-1 group-hover:scale-105 duration-200 transition-all rounded-xl" />
+        <img src={video.thumbnailUrl} className="h-56 p-1  group-hover:scale-105 duration-200 transition-all rounded-2xl" />
       </div>
 
       <div className="p-1 flex gap-2">
@@ -41,13 +41,13 @@ const VideoCard = ({ video }) => {
 
           {/* Views */}
           <div className="flex justify-around items-center">
-            <p className="flex gap-1 justify-center items-center">
+            <p className="flex gap-1.2 justify-center items-center">
               <FaRegEye /> {video?.views}
             </p>
-            <p className="flex gap-1 justify-center items-center">
+            <p className="flex gap-1.2 justify-center items-center">
               <FaThumbsUp /> {video?.likes}
             </p>
-            <p className="flex gap-1 justify-center items-center">
+            <p className="flex gap-1.2 justify-center items-center">
               <FaThumbsDown /> {video?.dislikes}
             </p>
           </div>
